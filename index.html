@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha Gravity Studio · SAGRAN Odyssey</title>
+<meta name="description" content="SAGRAN Odyssey: life aboard a living dragon spaceship. Create your music, race, fly and fight. Play free on Roblox.">
+<meta property="og:title" content="SAGRAN Odyssey · Alpha Gravity Studio">
+<meta property="og:description" content="Life aboard a living dragon spaceship. Play free on Roblox.">
+<meta property="og:image" content="https://alphagravity.studio/img/juego/04_batalla_saturno.jpg">
+<meta property="og:url" content="https://alphagravity.studio/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05060b;--panel:#0d0f1a;--line:#23263a;--txt:#eef0ff;--dim:#9aa0bf;--rojo:#ff3b4e;--cian:#35e0ff;--violeta:#a66bff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+nav{position:fixed;inset:0 0 auto;z-index:10;background:rgba(5,6,11,.75);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo{font:800 15px Orbitron,sans-serif;letter-spacing:.12em;text-decoration:none;white-space:nowrap}
+.logo b{color:var(--rojo)}
+.langs button{background:none;border:1px solid var(--line);color:var(--dim);font:600 12px Inter;padding:4px 8px;border-radius:6px;cursor:pointer}
+.langs button.on{color:var(--txt);border-color:var(--cian)}
+header{min-height:100vh;display:flex;align-items:flex-end;padding:120px 0 72px;
+ background:linear-gradient(180deg,rgba(5,6,11,.2) 0%,rgba(5,6,11,.55) 55%,var(--bg) 100%),url(img/juego/04_batalla_saturno.jpg) center/cover}
+.tag{display:inline-block;font:600 12px Orbitron;letter-spacing:.2em;color:var(--cian);border:1px solid var(--cian);padding:4px 10px;border-radius:4px;margin-bottom:18px}
+h1{font:800 clamp(38px,8vw,84px)/1 Orbitron,sans-serif;letter-spacing:.02em;text-shadow:0 0 30px rgba(255,59,78,.45)}
+h1 span{color:var(--rojo)}
+.sub{font-size:clamp(17px,2.4vw,22px);max-width:620px;margin:18px 0 30px;color:#d5d8ef}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rojo);color:#fff;text-decoration:none;font:800 18px Orbitron;letter-spacing:.08em;padding:16px 30px;border-radius:10px;box-shadow:0 0 28px rgba(255,59,78,.5);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.sec{background:none;border:1px solid var(--line);box-shadow:none;font-size:14px;padding:12px 20px}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+section{padding:80px 0}
+h2{font:800 clamp(24px,4vw,36px) Orbitron,sans-serif;margin-bottom:10px}
+h2+p{color:var(--dim);margin-bottom:36px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.card div{padding:14px 16px}
+.card h3{font:600 17px Orbitron;margin-bottom:4px}
+.card p{color:var(--dim);font-size:15px}
+.tripu{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.tripu figure{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tripu img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.tripu figcaption{padding:10px 12px;font:600 14px Orbitron;text-align:center}
+.cierre{text-align:center;background:radial-gradient(circle at 50% 0,rgba(166,107,255,.18),transparent 60%)}
+.cierre .acciones{justify-content:center;margin-top:24px}
+.redes{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--dim);font-size:14px;text-align:center}
+@media(max-width:600px){header{padding-bottom:48px}.btn{width:100%;justify-content:center}section{padding:56px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a class="logo" href="#">ALPHA <b>GRAVITY</b></a>
+ <div class="langs"><button data-l="en">EN</button> <button data-l="es">ES</button> <button data-l="pt">PT</button></div>
+</div></nav>
+
+<header><div class="wrap">
+ <span class="tag" data-t="tag">ROBLOX · FREE</span>
+ <h1>SAGRAN <span>ODYSSEY</span></h1>
+ <p class="sub" data-t="sub">Life aboard a living dragon spaceship. Create your music, race, fly fighters and defend the S-1 from the Invisible fleet.</p>
+ <div class="acciones">
+  <a class="btn juego" href="#" target="_blank" rel="noopener">▶ <span data-t="play">PLAY NOW</span></a>
+  <a class="btn sec" href="#nave" data-t="more">What's inside</a>
+ </div>
+</div></header>
+
+<section id="nave"><div class="wrap">
+ <h2 data-t="h_nave">Inside the ship</h2>
+ <p data-t="p_nave">A whole ship to explore with your friends. Headphones on.</p>
+ <div class="grid">
+  <article class="card"><img src="img/juego/02_estudio_musica.jpg" alt="" loading="lazy"><div><h3 data-t="c1">🎙️ Create your music</h3><p data-t="c1p">Record songs in the studio, pick the voices and share them. Top songs play on SAGRAN RADIO ON AIR.</p></div></article>
+  <article class="card"><img src="img/juego/06_batalla_mirage.jpg" alt="" loading="lazy"><div><h3 data-t="c2">✈️ Space battles</h3><p data-t="c2p">Fly fighters, launch drones and defend the S-1 from the Invisible fleet.</p></div></article>
+  <article class="card"><img src="img/juego/08_ojo_pista.jpg" alt="" loading="lazy"><div><h3 data-t="c3">🪐 Eye of Saturn</h3><p data-t="c3p">6 trials around the rings, F1-style times. Beat the record.</p></div></article>
+  <article class="card"><img src="img/juego/01_shopping_entrada.jpg" alt="" loading="lazy"><div><h3 data-t="c4">🛍️ SAGRAN Shop</h3><p data-t="c4p">A 3-floor mall inside the ship. Design your own clothes and sell them.</p></div></article>
+  <article class="card"><img src="img/juego/03_pileta.jpg" alt="" loading="lazy"><div><h3 data-t="c5">🏊 Olympic pool</h3><p data-t="c5p">Glass floor, a golden record line to chase and a giant ranking.</p></div></article>
+  <article class="card"><img src="img/juego/07_neverland.jpg" alt="" loading="lazy"><div><h3 data-t="c6">🎠 Neverland</h3><p data-t="c6p">Floor is lava, trampolines and parkour full of 💠.</p></div></article>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2 data-t="h_tripu">The crew</h2>
+ <p data-t="p_tripu">Meet the SAGRAN crew of the S-1.</p>
+ <div class="tripu">
+  <figure><img src="img/tripu/2_alexander.jpg" alt="Alexander" loading="lazy"><figcaption>Alexander</figcaption></figure>
+  <figure><img src="img/tripu/3_nael.jpg" alt="Nael" loading="lazy"><figcaption>Nael</figcaption></figure>
+  <figure><img src="img/tripu/4_notsag.jpg" alt="Notsag" loading="lazy"><figcaption>Notsag</figcaption></figure>
+  <figure><img src="img/tripu/5_jesica.jpg" alt="Jesica" loading="lazy"><figcaption>Jesica</figcaption></figure>
+  <figure><img src="img/tripu/6_lu.jpg" alt="Lu" loading="lazy"><figcaption>Lu</figcaption></figure>
+  <figure><img src="img/tripu/7_sagran_armor.jpg" alt="SAGRAN Armor" loading="lazy"><figcaption>SAGRAN</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="cierre"><div class="wrap">
+ <h2 data-t="h_fin">Come aboard</h2>
+ <p data-t="p_fin" style="margin:0 auto">Free on Roblox, on PC, phone and tablet.</p>
+ <div class="acciones">
+  <a class="btn juego" href="#" target="_blank" rel="noopener">▶ <span data-t="play">PLAY NOW</span></a>
+  <a class="btn sec" href="https://www.roblox.com/communities/538338269" target="_blank" rel="noopener" data-t="comu">Join the community</a>
+ </div>
+ <div class="redes">
+  <a class="btn sec" href="https://www.instagram.com/alphagravitystudio" target="_blank" rel="noopener">Instagram</a>
+  <a class="btn sec" href="https://www.tiktok.com/@alphagravity456" target="_blank" rel="noopener">TikTok</a>
+  <a class="btn sec" href="https://www.youtube.com/channel/UCkIJxv5TRVl55jJgo-_KATA" target="_blank" rel="noopener">YouTube</a>
+  <a class="btn sec" href="https://x.com/gastonjs" target="_blank" rel="noopener">X</a>
+ </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Alpha Gravity Studio · <span data-t="pie">Made in Argentina</span> 🇦🇷</div></footer>
+
+<script>
+const JUEGO="https://www.roblox.com/games/119516205019264";
+document.querySelectorAll("a.juego").forEach(a=>a.href=JUEGO);
+const T={
+ es:{tag:"ROBLOX · GRATIS",sub:"La vida a bordo de una nave dragón viva. Creá tu música, corré, piloteá cazas y defendé la S-1 de la flota Invisible.",play:"JUGAR AHORA",more:"Qué hay adentro",
+  h_nave:"Adentro de la nave",p_nave:"Una nave entera para recorrer con tus amigos. Auriculares puestos.",
+  c1:"🎙️ Creá tu música",c1p:"Grabá canciones en el estudio, elegí las voces y compartilas. Los temas top suenan en SAGRAN RADIO ON AIR.",
+  c2:"✈️ Batallas espaciales",c2p:"Piloteá cazas, lanzá drones y defendé la S-1 de la flota Invisible.",
+  c3:"🪐 El Ojo de Saturno",c3p:"6 pruebas entre los anillos, con tiempos estilo F1. Rompé el récord.",
+  c4:"🛍️ SAGRAN Shop",c4p:"Un shopping de 3 pisos en la nave. Diseñá tu propia ropa y vendela.",
+  c5:"🏊 Pileta olímpica",c5p:"Piso de vidrio, una línea dorada del récord para perseguir y un ranking gigante.",
+  c6:"🎠 Neverland",c6p:"El piso es lava, camas elásticas y parkour lleno de 💠.",
+  h_tripu:"La tripulación",p_tripu:"Conocé a la tripulación SAGRAN de la S-1.",
+  h_fin:"Subí a bordo",p_fin:"Gratis en Roblox, en PC, celular y tablet.",comu:"Unite a la comunidad",pie:"Hecho en Argentina"},
+ pt:{tag:"ROBLOX · GRÁTIS",sub:"A vida a bordo de uma nave dragão viva. Crie sua música, corra, pilote caças e defenda a S-1 da frota Invisível.",play:"JOGAR AGORA",more:"O que tem dentro",
+  h_nave:"Dentro da nave",p_nave:"Uma nave inteira para explorar com seus amigos. Fones no ouvido.",
+  c1:"🎙️ Crie sua música",c1p:"Grave músicas no estúdio, escolha as vozes e compartilhe. As top tocam na SAGRAN RADIO ON AIR.",
+  c2:"✈️ Batalhas espaciais",c2p:"Pilote caças, lance drones e defenda a S-1 da frota Invisível.",
+  c3:"🪐 Olho de Saturno",c3p:"6 provas entre os anéis, com tempos estilo F1. Quebre o recorde.",
+  c4:"🛍️ SAGRAN Shop",c4p:"Um shopping de 3 andares na nave. Crie suas roupas e venda.",
+  c5:"🏊 Piscina olímpica",c5p:"Piso de vidro, uma linha dourada do recorde e um ranking gigante.",
+  c6:"🎠 Neverland",c6p:"O chão é lava, camas elásticas e parkour cheio de 💠.",
+  h_tripu:"A tripulação",p_tripu:"Conheça a tripulação SAGRAN da S-1.",
+  h_fin:"Suba a bordo",p_fin:"Grátis no Roblox, no PC, celular e tablet.",comu:"Entre na comunidade",pie:"Feito na Argentina"}};
+const EN={};document.querySelectorAll("[data-t]").forEach(e=>EN[e.dataset.t]=e.textContent);T.en=EN;
+function idioma(l){if(!T[l])l="en";document.documentElement.lang=l;
+ document.querySelectorAll("[data-t]").forEach(e=>{const v=T[l][e.dataset.t];if(v)e.textContent=v});
+ document.querySelectorAll(".langs button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));
+ try{localStorage.setItem("lang",l)}catch(e){}}
+document.querySelectorAll(".langs button").forEach(b=>b.onclick=()=>idioma(b.dataset.l));
+let l0="en";try{l0=localStorage.getItem("lang")||""}catch(e){}
+if(!l0){const n=(navigator.language||"en").slice(0,2);l0=n==="es"?"es":n==="pt"?"pt":"en"}
+idioma(l0);
+</script>
+</body>
+</html>
